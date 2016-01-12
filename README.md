@@ -1,2 +1,2 @@
 # biom262-hw1
-biom262 homework1 shared
+This git repo is for biom262 homework1, done by Jijun Liu and Michael Baughn
