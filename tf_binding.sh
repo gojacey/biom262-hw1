@@ -6,7 +6,7 @@
 #PBS -m abe
 
 #start of exercise1
-cd /oasis/tscc/scratch/ucsd-train16
+cd /oasis/tscc/scratch/ucsd-train16/week1hw
 cat tf.bed | grep "NFKB" | sed -n '1,702'p > tf.nfkb.bed
 
 
