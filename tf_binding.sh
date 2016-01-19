@@ -14,4 +14,11 @@ cat tf.bed | grep "NFKB" | sed -n '1,702'p > tf.nfkb.bed
 awk '$3 == "transcript" {print $0}' gencode.v19.annotation.chr22.gtf > gencode.v19.annotation.chr22.transcript.gtf
 #End of exercise2
 
+#Start of exercise3
+module load biotools
+bedtools flank -i gencode.v19.annotation.chr22.transcript.gtf -g hg19.genome -l 2000 -r 0 -s > gencode.v19.annotation.chr22.transcript.promoter.gtf
+
+#start of exercise4
+bedtools intersect -a gencode.v19.annotation.chr22.transcript.promoter.gtf -b tf.nfkb.bed > gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf
+
 
