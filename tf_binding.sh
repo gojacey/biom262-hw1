@@ -11,7 +11,6 @@ cat tf.bed | grep "NFKB" | sed -n '1,702'p > tf.nfkb.bed
 
 
 #Start of exercise2
-bash --out exercise2
 awk '$3 == "transcript" {print $0}' gencode.v19.annotation.chr22.gtf > gencode.v19.annotation.chr22.transcript.gtf
 #End of exercise2
 
