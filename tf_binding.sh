@@ -65,6 +65,10 @@ tail gencode.v19.annotation.chr22.transcript.promoter.nfkb.fasta
 #End of Exercise 5
 
 
+#Submitter Instruction 6 messages:
 
+#person2 (Michael) adds:
+echo "Hello I am a message in standard error (stderr) >&2 
+#explainer from instructions:  ">&2 outputs to "secondary" aka "error" output)"
 
 
