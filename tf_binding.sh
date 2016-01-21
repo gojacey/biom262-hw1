@@ -22,3 +22,4 @@ bedtools flank -i gencode.v19.annotation.chr22.transcript.gtf -g hg19.genome -l 
 bedtools intersect -a gencode.v19.annotation.chr22.transcript.promoter.gtf -b tf.nfkb.bed > gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf
 
 
+echo "Hello I am a message in standard out (stdout)"
