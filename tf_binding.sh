@@ -1,4 +1,3 @@
-
 #PBS -q hotel
 #PBS -N Biom262Hw1_GroupAssignment
 #PBS -l nodes=1:ppn=1
@@ -35,10 +34,7 @@ bedtools getfasta -fi GRCh37.p13.chr22.fa -bed gencode.v19.annotation.chr22.tran
 
 
 #Submitter Instruction 6 messages:
-
 echo "Hello I am a message in standard out (stdout)"
 #person2 (Michael) adds:
-
 echo "Hello I am a message in standard error (stderr)" >&2
-
 #explainer from instructions:  ">&2 outputs to "secondary" aka "error" output)"
