@@ -9,10 +9,9 @@
 #PBS -M mbaughn@ucsd.edu,jil655@ucsd.edu
 #PBS -m abe
 #PBS -A ucsd-train03
-cd /oasis/tscc/home/ucsd-train03/group_project/biom262-hw1/data
+cd /home/ucsd-train03/group_project/biom262-hw1/data
 
 #Exercise1
-cd ~/home/ucsd-train16/code/biom262-2016/weeks/week01/data
 cat tf.bed | grep "NFKB" | sed -n '1,702'p > tf.nfkb.bed
 #End of exercise1
 
@@ -40,7 +39,7 @@ bedtools getfasta -fi GRCh37.p13.chr22.fa -bed gencode.v19.annotation.chr22.tran
 #Submitter Instruction 6 messages:
 
 #person2 (Michael) adds:
-echo "Hello I am a message in standard error (stderr) >&2 
+echo "Hello I am a message in standard error (stderr) >&2"
 #explainer from instructions:  ">&2 outputs to "secondary" aka "error" output)"
 
 
