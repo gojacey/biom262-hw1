@@ -9,7 +9,7 @@
 #PBS -M mbaughn@ucsd.edu,jil655@ucsd.edu
 #PBS -m abe
 #PBS -A ucsd-train03
-cd /oasis/tscc/scratch/ucsd-train03
+cd /oasis/tscc/home/ucsd-train03/group_project/biom262-hw1/data
 
 bash --out exercise1
 cd ~/home/ucsd-train16/code/biom262-2016/weeks/week01/data
