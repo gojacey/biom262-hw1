@@ -1,3 +1,16 @@
+#!/bin/csh
+#PBS -q hotel
+#PBS -N Biom262Hw1_GroupAssignment
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=0:10:00
+#PBS -o it_worked-give_blue_folder_speech
+#PBS -e it_did_not_work-give_red_folder_speech
+#PBS -V
+#PBS -M mbaughn@ucsd.edu,jil655@ucsd.edu
+#PBS -m abe
+#PBS -A ucsd-train03
+cd /oasis/tscc/scratch/ucsd-train03
+
 bash --out exercise1
 cd ~/home/ucsd-train16/code/biom262-2016/weeks/week01/data
 cat tf.bed | grep "NFKB" | sed -n '1,702'p > tf.nfkb.bed
@@ -38,7 +51,7 @@ tail gencode.v19.annotation.chr22.transcript.promoter.gtf
 #End of exercise3
 
 #Start of Exercise 4: Use bedtools intersect to overlap TFs with promoters
-%%bash --out exercise4
+bash --out exercise4
 module load biotools
 bedtools intersect -a gencode.v19.annotation.chr22.transcript.promoter.gtf -b tf.nfkb.bed > gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf
 wc -l gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf
@@ -51,7 +64,7 @@ tail gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf
 #End of Exercise 4
 
 #Start of Exercise 5: Use bedtools getfasta to extract sequences
-%%bash --out exercise5
+bash --out exercise5
 module load biotools
 bedtools getfasta -fi GRCh37.p13.chr22.fa -bed gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf -s -fo gencode.v19.annotation.chr22.transcript.promoter.nfkb.fasta
 #yes the strand matters!
