@@ -39,7 +39,8 @@ bedtools getfasta -fi GRCh37.p13.chr22.fa -bed gencode.v19.annotation.chr22.tran
 #Submitter Instruction 6 messages:
 
 #person2 (Michael) adds:
-echo "Hello I am a message in standard error (stderr) >&2"
+echo "Hello I am a message in standard out (sdout)"
+echo "Hello I am a message in standard error (stderr)" > &2
 #explainer from instructions:  ">&2 outputs to "secondary" aka "error" output)"
 
 
