@@ -1,4 +1,3 @@
-#!/bin/csh
 #PBS -q hotel
 #PBS -N Biom262Hw1_GroupAssignment
 #PBS -l nodes=1:ppn=1
