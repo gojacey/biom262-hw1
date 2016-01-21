@@ -7,7 +7,7 @@
 #PBS -M mbaughn@ucsd.edu,jil655@ucsd.edu
 #PBS -m abe
 #PBS -A ucsd-train03
-cd /home/ucsd-train03/group_project/biom262-hw1/data
+cd /oasis/tscc/scratch/ucsd-train16/week1hw
 
 #Exercise1
 cat tf.bed | grep "NFKB" | sed -n '1,702'p > tf.nfkb.bed
